@@ -1,8 +1,8 @@
 import numpy as np
 
 def q (x): #onde x é o ângulo de fase solar
-  x = float(input("Digite o valor do ângulo de fase solar: "))
-	q = 2*((funcao_de_x*np.pi*(-1))*(fucao_de_x*np.pi))
+  G = float(input("Digite o valor do ângulo de fase solar: "))
+	q = 0.29 + 0.684 * G
 	return q
 
 ##############################################################
