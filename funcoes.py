@@ -1,7 +1,7 @@
 import numpy as np
 
-def q (x): #onde x é o ângulo de fase solar
-  G = float(input("Digite o valor do ângulo de fase solar: "))
+def q (G): #onde G é o parâmetro de inclinação, às vezes adotado como 0.15
+  G = float(input("Digite o valor do parâmetro de inclinação: "))
 	q = 0.29 + 0.684 * G
 	return q
 
