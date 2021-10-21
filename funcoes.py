@@ -13,5 +13,6 @@ def pv (A, q): #onde A é o albedo bolométrico de Bond e q é uma integral de f
 ##############################################################
 
 def H (D, pv): #onde H é a magnitude absoluta, D é o diâmetro, dado em km e pv é o albedo geométrico
-	H = (-5*np.log(D)) - ((5/2)*np.log(pv)) + 15.62
+	x = (D*np.sqrt(pv))/1329
+	H = -5*np.log(x)
 	return H
