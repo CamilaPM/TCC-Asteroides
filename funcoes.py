@@ -16,5 +16,3 @@ def H (D, pv): #onde H é a magnitude absoluta, D é o diâmetro, dado em km e p
 	x = (D*np.sqrt(pv))/1329
 	H = -5*np.log(x)
 	return H
-
-#Teste
